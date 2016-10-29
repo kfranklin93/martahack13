@@ -1,4 +1,24 @@
-Thank You to # martaionic
+## Marta for Everyone
+###  Marta Hackathon Team Project - [See here for list of teams](https://docs.google.com/spreadsheets/d/1vtETcx_vf6j0Zsbn_oMWnx-3LTDF7-3jtWKeBoBPFWs/edit)
+
+
+### **This Repository is for web development.[The repository for Android development on principally the same application is managed at the follow repository](https://github.com/violetaria/MartaForEveryone).**
+
+
+Thank You to #martaionic !
+
+
+
+# Quickstart
+
+**In Terminal**
+
+1. Clone the repository `https://github.com/kfranklin93/martahack13.git`
+2. Install necessary dependencies with NodeJS `npm install`
+3. Start the NodeJS server `npm start`
+4. Navigate to `localhost:5000`
+5. Peruse our prototype! (Or open an issue, make a pull request!)
+
 
 
 ## Features
