@@ -1,24 +1,31 @@
 <ion-view view-title="{{stationName}}">
-  <ion-content>
-    <ion-refresher
-      pulling-text="Pull to refresh..."
-      on-refresh="refreshArrivals()">
-    </ion-refresher>
-    <ul class="list station-list">
-      <li  ng-class="arrivalClass(arrival)" ng-click="trainView(arrival.train_id)" class="item arrival" ng-repeat="arrival in arrivals">
-        <span class="capstone">{{arrival.direction}}</span>
-        <span class="desc" ng-hide="arrival.scheduled">
-          <h2>{{arrival.destination}}</h2>
-          <p>Train ID: {{arrival.train_id}}</p>
-        </span>
-        <span class="desc" ng-show="arrival.scheduled">
-          <h2>Scheduled Train</h2>
-          <p>No realtime data.</p>
-        </span>
-        <div class="time-left">
-          {{arrival.waiting_time}}
-        </div>
-      </li>
-    </ul>
-  </ion-content>
+    <ion-content>
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="refreshArrivals()">
+        </ion-refresher>
+        <ul class="list station-list">
+            <li  ng-class="arrivalClass(arrival)" ng-click="trainView(arrival.train_id)" class="item arrival" ng-repeat="arrival in arrivals">
+                <span class="capstone">{{arrival.direction}}</span>
+                <span class="desc" ng-hide="arrival.scheduled">
+                    <h2>{{arrival.destination}}</h2>
+                    <p>Train ID: {{arrival.train_id}}</p>
+                </span>
+                <span class="desc" ng-show="arrival.scheduled">
+                    <h2>Scheduled Train</h2>
+                    <p>No realtime data.</p>
+                </span>
+                <div class="time-left">
+                    {{arrival.waiting_time}}
+                </div>
+            </li>
+        </ul>
+
+        <ul class="list">
+            <li ng-repeat="bus in filteredBusList track by $index">
+                <p>Bus from {{bus.TIMEPOINT}} is traveling along the {{bus.ROUTE}} in the {{bus.DIRECTION}} direction.</p>
+
+            </li>
+        </ul>
+    </ion-content>
 </ion-view>
