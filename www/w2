@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.background-grey {
+    background-color: grey;
+}
+.red {
+    color: rainbow;
+}
+.center{
+    text-align: center;
+}
+.center-img{
+    margin: 0px auto;
+    display: block;
+}
+.img1-sizing{
+    height:250px;
+    width:400px;
+}
+.padding {
+ padding: 50px;
+ }
+div:hover {
+    background-color: grey;
+
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="MartaForEveryone.html">Screen 1</a></li>
+  <li><a href="MartaForEveryone2.html">Screen 2</a></li>
+  <li><a href="MartaForEveryone3.html">Screen 3</a></li>
+  <li><a href="#"> <img src=""> </a></li>
+</ul>
+<img src="images/marta-logo.png" alt="Marta Logo" class="center-img img1-sizing" >
+
+  <p> Please Choose A Route </p>
+<div class="center">
+<p>
+    <a href "/MartaForEveryone3.html"> Route 1----------- 5 Minutes</p> </a>
+</div>
+<div class="center">
+<p> <a href "/MartaForEveryone3.html"> Route 2-----------10 Minutes</p> </a>
+</div>
+<div class="center">
+<p> <a href "/MartaForEveryone3.html"> Route 3-----------1 hour 20 minutes </p> </a>
+</div>
+
+</body>
+</html>
