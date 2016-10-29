@@ -1,13 +1,7 @@
-var input = document.getElementById('inputId');
-  google.maps.event.addDomListener(input, 'keydown', function(e) {
-    if (e.keyCode == 13) {
-        e.preventDefault();
-    }
-  });
-
-
 // This Autocomplete 'module' is intended to be used for demonstration purposes on the landing page
-// and also prototype outputting the geocoded JSON into the application for wider application.
+// and also prototype outputting the geocoded JSON into the application for wider application. 
+
+
 
 $locationInfo = {
   geocode: null,

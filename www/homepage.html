@@ -16,6 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Here for debugging purposes- -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <!-- Autocomplete - -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -197,13 +203,24 @@
   </style>
   </head>
   <body>
-<div class="jumbotron text-center">
-  <h1>Marta for Everyone</h1>
-  <p>???</p>
-  <form class="form-inline">
-    <input type="address" class="form-control" size="50" placeholder="Destination" required>
-    <button type="button" class="btn btn-danger">Go!</button>
-  </form>
-</div>
+    <div class="jumbotron text-center">
+      <h1>Marta for Everyone</h1>
+      <p>Get where you need to go (from exactly where you are):</p>
+
+      <form class="form-inline">
+        <!-- Auto-complete Address Field using Google Maps Autocomplete nb:
+        https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+        -->
+        <input id="autoField" name="autoField" type="address" class="form-control" size="50" placeholder="Destination" required>
+        <button type="button" class="btn btn-danger">Go!</button>
+      </form>
+      <!-- This Autocomplete 'module' is intended to be used for demonstration purposes on the landing page
+      and also prototype outputting the geocoded JSON into the application for wider application. -->
+
+            <!-- JSON Formatted output of auto-completed address search with latitude and longtitude -->
+            <div id="output"></div>
+            <script type="text/javascript" src="js/autocompleteform.js" async></script>
+
+    </div>
   </body>
 </html>
