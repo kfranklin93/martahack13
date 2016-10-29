@@ -1,4 +1,21 @@
+## Marta for Everyone
+###  Marta Hackathon Team Project
+
+This Repository is for web development on principally the same application, [Android development is managed at the follow repository](https://github.com/violetaria/MartaForEveryone).
+
+
 Thank You to # martaionic
+
+
+
+# Quickstart
+
+1.
+2.
+3.
+4.
+5.
+
 
 
 ## Features
