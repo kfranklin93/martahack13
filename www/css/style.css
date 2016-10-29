@@ -5,6 +5,16 @@
 .feedbox {
   padding: 16px;
 }
+.banner{
+  background: #ffa700;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: 5px;
+  font-weight: bold;
+  overflow: hidden;
+}
 
 /* station + train */
 .station-list .capstone {
@@ -162,7 +172,7 @@
   }
   .platform-browser .nav-bar-block[nav-bar=leaving],
     .platform-browser .pane[nav-view=leaving] {
-    visibility: show;
+    visibility: hidden;
     overflow: hidden;
   }
 }
